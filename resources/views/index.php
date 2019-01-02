@@ -24,8 +24,8 @@
     <script src="js/main.js"></script>
 </head>
 <body class="full-cover-background" style="background-image:url(assets/img/font-login.jpg);">
+    
     <a href="homeinvitado" class="btn-login"><h3>INVITADO</h3></a>
-
     <div class="form-container">
         <p class="text-center" style="margin-top: 17px;">
            <i class="zmdi zmdi-account-circle zmdi-hc-5x"></i>
@@ -38,12 +38,14 @@
               <span class="bar-login"></span>
               <label><i class="zmdi zmdi-account"></i> &nbsp; Nombres</label>
             </div><br>
+
             <div class="group-material-login">
               <input type="password" class="material-login-control" required="" maxlength="70">
               <span class="highlight-login"></span>
               <span class="bar-login"></span>
               <label><i class="zmdi zmdi-lock"></i> &nbsp; Contraseña</label>
             </div>
+            
             <div class="group-material">
                 <select class="material-control-login">
                     <option value="" disabled="" selected="">Tipo de usuario</option>

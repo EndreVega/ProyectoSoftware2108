@@ -19,6 +19,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
 Route::get('/admin', function(){
     return view('admin');
 });
@@ -27,6 +28,12 @@ Route::get('/book', function(){
 });
 Route::get('/home', function(){
     return view('home');
+});
+Route::get('/home1', function(){
+    return view('home1');
+});
+Route::get('/homeinvitado', function(){
+    return view('homeinvitado');
 });
 Route::get('/index', function(){
     return view('index');
@@ -39,7 +46,7 @@ Route::get('/loan', function(){
 
 
 
+Auth::routes();
 
-
-
-
+Route::get('/home', 'HomeController@index')->name('home');
+Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
